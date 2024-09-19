@@ -1,7 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:to_do/Providers/auth_provider.dart';
-import 'package:to_do/UI/Home/home_screen.dart';
 import 'package:to_do/UI/Utility/dialog_utils.dart';
 import 'package:to_do/UI/Utility/email_validation.dart';
 import 'package:to_do/UI/Utility/password_validation.dart';
@@ -220,7 +219,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
       showMessageDialog(context,
           message: AppLocalizations.of(context)!.account_created,
           posButtonTitle: 'Ok', posButtonAction: () {
-        Navigator.pushReplacementNamed(context, HomeScreen.routeName);
+        Navigator.pushReplacementNamed(context, LoginScreen.routeName);
       });
     } on FirebaseAuthException catch (e) {
       print(e);
