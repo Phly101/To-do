@@ -322,16 +322,8 @@ class _EditScreenState extends State<EditScreen> {
                           padding: const EdgeInsets.all(16.0),
                           child: Text(
                               AppLocalizations.of(context)!.save_changes,
-                              style: isDark
-                                  ? Theme
-                                  .of(context)
-                                  .textTheme
-                                  .titleMedium
-                                  ?.copyWith(
-                                  color: Theme
-                                      .of(context)
-                                      .primaryColor)
-                                  : Theme
+                              style: 
+                                  Theme
                                   .of(context)
                                   .textTheme
                                   .titleMedium
